@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-MX">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="map[]" />
-    <meta name="description" content="Describe your website">
+    <meta name="description" content="Descripcion del sitio">
     <link rel="shortcut icon" type="image/x-icon" href="https://alfhdz.github.io/img/favicon.ico">
     <title>Creating a New Theme</title>
-    <meta name="generator" content="Hugo 0.39" />
+    <meta name="generator" content="Hugo 0.37.1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://alfhdz.github.io/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
     
@@ -36,7 +36,7 @@
       <ul class="nav navbar-nav navbar-right">
       
         
-        <li><a href="/projects/">PROJECTS</a></li>
+        <li><a href="/projects/">PROYECTOS</a></li>
         
       
       </ul>
@@ -945,7 +945,7 @@ i'm speechless
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/first-post/&quot;&gt;first&lt;/a&gt;&lt;/h1&gt;
 &lt;script&gt;document.write('&lt;script src=&quot;http://'
         + (location.host || 'localhost').split(':')[0]
-        + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
+		+ ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
         + 'script&gt;')&lt;/script&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -990,8 +990,8 @@ i'm speechless
 
 <pre><code>$ vi config.toml
 [permalinks]
-    page = &quot;/:title/&quot;
-    about = &quot;/:filename/&quot;
+	page = &quot;/:title/&quot;
+	about = &quot;/:filename/&quot;
 </code></pre>
 
 <p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p>
@@ -1010,7 +1010,7 @@ i'm speechless
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;{{ .Title }}&lt;/title&gt;
+	&lt;title&gt;{{ .Title }}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
 :wq
@@ -1175,8 +1175,7 @@ $ vi themes/zafta/layouts/_default/single.html
     <footer>
   <div id="footer">
     <div class="container">
-      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
-      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+      <p class="text-muted">Powered by <a href="https://gohugo.io/">Hugo</a> with ♥</p>
     </div>
   </div>
 </footer>
